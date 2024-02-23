@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Poppins"; /*Can be any text*/
+  src: local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+:root {
+  --body-bg: rgb(255, 255, 255);
+  /* --body-bg: #123; */
+  --nav-bg: rgb(69, 92, 115);
+}
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+main {
+  font-size: 1.25rem;
+  background-color: var(--body-bg);
+  color: rgb(0, 0, 0);
+  /* color: white; */
+  font-family: "Poppins" sans-serif;
+  position: relative;
+}
+input::placeholder,
+input.form-control,
+form {
+  font-weight: 700;
+}
+h1 {
+  font-family: "Poppins" sans-serif;
+}
+.create-container,
+.list-container {
+  background-color: rgba(248, 248, 248, 0.992);
+}
+input[type="color"] {
+  cursor: pointer; /* Change cursor to pointer */
+  /* Add any additional styles specific to input[type="color"] here */
+}
+div.square {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+}
+
+a.btn-action,
+button.btn-action {
+  border-radius: 50%;
+}
+td {
+  vertical-align: middle;
+}
+.image-container{
+  position: relative;
+}
+#img-create {
+  display: none;
+}
+label.img-create-label {
+  cursor: pointer;
+position:absolute;
+bottom: 10px;
+}
+.edite{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #707070a0;
+}
+.btn-close{
+  cursor: pointer;
+}
+/* a.btn-action ,button.btn-action{
+  background: none;
+  border: none;
+} */
