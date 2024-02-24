@@ -31,13 +31,20 @@ const Create = () => {
               classParent="py-2 w-100"
               placeholder="TVA %"
             />
-            <div className="d-flex justify-content-start flex-nowrap align-items-center gap-1 ">
+            <div className="d-flex justify-content-between w-100 flex-nowrap align-items-center ">
               <SelectObj
                 titleOptions="Sans catégorie"
                 className="form-select"
               />
+            {/* <div>Totale Prix: <span class="badge text-bg-primary fs-6"> 0 MAD </span></div>  */}
               {/* <Link to="/categories" className="btn btn-primary btn-sm fw-bold">Ajouter Categorie</Link> */}
             </div>
+            <div className="d-flex justify-content-start w-100 flex-column ">
+             
+            <div className="d-flex justify-content-start flex-column w-100">Produit: <span class="badge text-bg-primary fs-5 fw-medium"> 300,00 MAD </span></div> 
+            <div className="d-flex justify-content-start flex-column w-100">Totale: <span class="badge text-bg-primary fs-5 fw-medium"> 7250,00 MAD </span></div> 
+            </div>
+            
           </div>
           <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-start flex-column image-container">
             <img src="/Rectangle.png" className="image-create img-fluid" alt="produit" />

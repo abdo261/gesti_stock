@@ -5,6 +5,7 @@ const toggleSlice = createSlice({
   initialState: {
     showCreateCategory: true,
     showCreateProduct: true,
+    showCreateVente: true,
   },
   reducers: {
     toogleCreateCategory(state) {
@@ -12,6 +13,9 @@ const toggleSlice = createSlice({
     },
     toogleCreateProduct(state) {
       state.showCreateProduct = !state.showCreateProduct;
+    },
+    toogleCreateVente(state) {
+      state.showCreateVente = !state.showCreateVente;
     },
   },
 });
